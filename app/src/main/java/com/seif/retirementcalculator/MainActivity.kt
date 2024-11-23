@@ -32,7 +32,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             AppCenter.start(application, BuildConfig.APP_CENTER_KEY, Analytics::class.java, Crashes::class.java)
             RetirementCalculatorTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     RetirementCalculatorScreen()
                 }
